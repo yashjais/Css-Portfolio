@@ -8,23 +8,21 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
         /*
-        properties of children 
-        order is 0 by default
+        align-self
          */
         .container {
+            height: 300px;
             display: flex;
+            flex-direction: row;
+            align-items: center;
         }
 
         .box-5 {
-            order: -1;
+            align-self: stretch;
         }
 
         .box-3 {
-            order: 1;
-        }
-
-        .box-1 {
-            order: 2;
+            align-self: flex-end;
         }
     </style>
 </head>
