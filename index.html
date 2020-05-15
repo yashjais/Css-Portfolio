@@ -7,37 +7,42 @@
     <title>Css-Flexbox</title>
     <link rel="stylesheet" href="./styles.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0
-        }
-
-        .header {
-            height: 100vh;
-            background: crimson;
-            background: url('./doggo.jpg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
+        /* 
+        align-content
+        strech(default)
+        flex-start
+        flex-end
+        center
+        space-between 
+        space-around
+        */
+        .container {
+            height: 500px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .banner {
-            height: 100vh;
-            background: blue;
+            flex-wrap: wrap;
+            align-content: stretch;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
         }
     </style>
 </head>
 
 <body>
-    <header class="header">
-        <h1>hello world</h1>
-    </header>
-    <div class="banner"></div>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <div class="box box-Generic">G</div>
+        <div class="box box-Generic">G</div>
+        <div class="box box-Generic">G</div>
+        <div class="box box-Generic">G</div>
+        <div class="box box-Generic">G</div>
+    </div>
 </body>
 
 </html>
