@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
         /*
-        align-self
+        flex-grow
          */
         .container {
-            height: 300px;
             display: flex;
             flex-direction: row;
-            align-items: center;
         }
 
-        .box-5 {
-            align-self: stretch;
+        .box {
+            flex-grow: 1;
         }
 
-        .box-3 {
-            align-self: flex-end;
+        .box-1 {
+            flex-grow: 3;
+        }
+
+        .box-1 {
+            flex-grow: 2;
         }
     </style>
 </head>
@@ -32,8 +34,8 @@
         <div class="box box-1">1</div>
         <div class="box box-2">2</div>
         <div class="box box-3">3</div>
-        <div class="box box-4">4</div>
-        <div class="box box-5">5</div>
+        <!-- <div class="box box-4">4</div>
+        <div class="box box-5">5</div> -->
         <!-- <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
