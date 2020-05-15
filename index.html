@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
         /*
-        main axis / cross axis 
+        properties of children 
+        order is 0 by default
          */
         .container {
-            height: 500px;
             display: flex;
-            flex-direction: row;
-            /* default */
-            justify-content: center;
-            align-items: center;
         }
 
-        .container-1 {
-            height: 800px;
-            display: flex;
-            flex-direction: column;
-            border: solid 3px blue;
-            align-items: center;
-            justify-content: center;
+        .box-5 {
+            order: -1;
+        }
+
+        .box-3 {
+            order: 1;
+        }
+
+        .box-1 {
+            order: 2;
         }
     </style>
 </head>
@@ -42,18 +41,6 @@
         <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div> -->
-    </div>
-    <div class="container-1">
-        <div class="box box-1">1</div>
-        <div class="box box-2">2</div>
-        <div class="box box-3">3</div>
-        <div class="box box-4">4</div>
-        <div class="box box-5">5</div>
-        <!-- <div class="box box-Generic">G</div>
-            <div class="box box-Generic">G</div>
-            <div class="box box-Generic">G</div>
-            <div class="box box-Generic">G</div>
-            <div class="box box-Generic">G</div> -->
     </div>
 </body>
 
