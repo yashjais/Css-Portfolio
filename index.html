@@ -8,23 +8,17 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
         /*
-        flex-grow
+        flex-shrink
          */
         .container {
             display: flex;
             flex-direction: row;
-        }
-
-        .box {
-            flex-grow: 1;
+            flex-wrap: wrap;
         }
 
         .box-1 {
-            flex-grow: 3;
-        }
-
-        .box-1 {
-            flex-grow: 2;
+            width: 100px;
+            flex-shrink: 3;
         }
     </style>
 </head>
@@ -34,8 +28,8 @@
         <div class="box box-1">1</div>
         <div class="box box-2">2</div>
         <div class="box box-3">3</div>
-        <!-- <div class="box box-4">4</div>
-        <div class="box box-5">5</div> -->
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
         <!-- <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
