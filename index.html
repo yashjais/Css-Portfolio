@@ -7,25 +7,25 @@
     <title>Css-Flexbox</title>
     <link rel="stylesheet" href="./styles.css">
     <style>
-        /* 
-        align-content
-        strech(default)
-        flex-start
-        flex-end
-        center
-        space-between 
-        space-around
-        */
+        /*
+        main axis / cross axis 
+         */
         .container {
             height: 500px;
             display: flex;
-            flex-wrap: wrap;
-            align-content: stretch;
-            align-content: flex-start;
-            align-content: flex-end;
-            align-content: center;
-            align-content: space-around;
-            align-content: space-between;
+            flex-direction: row;
+            /* default */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-1 {
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            border: solid 3px blue;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -37,11 +37,23 @@
         <div class="box box-3">3</div>
         <div class="box box-4">4</div>
         <div class="box box-5">5</div>
+        <!-- <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
         <div class="box box-Generic">G</div>
-        <div class="box box-Generic">G</div>
-        <div class="box box-Generic">G</div>
+        <div class="box box-Generic">G</div> -->
+    </div>
+    <div class="container-1">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <!-- <div class="box box-Generic">G</div>
+            <div class="box box-Generic">G</div>
+            <div class="box box-Generic">G</div>
+            <div class="box box-Generic">G</div>
+            <div class="box box-Generic">G</div> -->
     </div>
 </body>
 
