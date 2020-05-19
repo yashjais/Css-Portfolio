@@ -243,3 +243,35 @@ body{
   }
 }
 /* end of services section */
+/* numbers section */
+.numbers {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url('./img/numbers-bcg.jpeg')center/cover fixed no-repeat;
+  color: var(--light);
+}
+
+.numbers__center {
+  max-width: 95vw;
+  margin: 2rem auto;
+  /* background: crimson; */
+}
+
+.numbers__single-number {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.numbers__single-number-icon {
+  font-size: 3rem;  
+}
+
+.numbers__single-number-text {
+  letter-spacing: .5rem;
+  font-size: 2rem;
+  margin: .5rem auto;
+}
+
+.numbers__single-number-title {
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+}
+/* end of numbers section */
