@@ -189,7 +189,7 @@ body{
 }
 
 .services__center {
-  max-width: 90vh;
+  max-width: 90vw;
   margin: 2rem auto;
 }
 
@@ -273,5 +273,22 @@ body{
 .numbers__single-number-title {
   text-transform: uppercase;
   letter-spacing: .25rem;
+}
+
+@media screen and (min-width: 576px) {
+  .numbers__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .numbers__single-number {
+    flex: 0 0 calc(50% - .5rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .numbers__single-number {
+    flex: 0 0 calc(25% - .5rem);
+  }
 }
 /* end of numbers section */
