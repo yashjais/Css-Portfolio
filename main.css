@@ -351,4 +351,21 @@ body{
   opacity: 1;
   transform: scale(1) translate(-50%, -50%);
 } 
+
+@media screen and (min-width: 768px) {
+  .projects__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .projects__single-project {
+    flex: 0 0 calc(50% - .5rem)
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects__single-project {
+    flex: 0 0 calc(25% - .5rem)
+  }
+}
 /* end of projects section */
