@@ -34,8 +34,14 @@ body{
 
 /* nav */
 .nav {
-  background: var(--light);
+  background:var(--light);
 }
+/*
+.nav-container {
+  max-width: 90vh;
+  margin: 2rem auto; 
+} */
+
 /* end of nav */
 
 /* banner */
