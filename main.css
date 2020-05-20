@@ -78,8 +78,42 @@ body{
   overflow: hidden;
   transition: all 2s linear;
 }
+
 .show__link {
   height: 264px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: .5rem solid var(--dark);
+  }
+  .nav__header {
+    border: none;
+  }
+  .nav__btn {
+    display: none;
+  }
+  .nav__links {
+    /* as a child */
+    background: transparent;
+    height: auto;
+    flex: 1 0 auto;
+    /* as a parent */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .nav__single-link {
+    background: transparent;
+    flex: 1 0 100px;
+  }
+  .nav__single-link:hover {
+    padding-left: 1rem;
+    color: var(--dark);
+  }
 }
 /* end of nav */
 
