@@ -417,7 +417,7 @@ body{
   transition: all 1s ease-in-out;
 }
 
-.contact__btn:hover{
+.contact__btn:hover {
   background: var(--light);
   color: var(--dark);
   border-color: var(--dark);
@@ -427,3 +427,27 @@ body{
   margin: .5rem;
 }
 /* end of contact section */
+/* footer section */
+.footer {
+  padding: 3rem 0;
+  background: var(--dark);
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-content: center; */
+}
+
+.footer__single-icon {
+  font-size: 2rem;
+  color: var(--light);
+}
+
+.icon {
+  transition: all .5s ease-in-out;
+}
+
+.footer__single-icon:hover .icon {
+  color: var(--grey);
+}
